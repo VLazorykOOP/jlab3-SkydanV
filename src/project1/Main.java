@@ -1,6 +1,5 @@
 package project1;
 
-// Суперклас Корабель
 class Ship {
     protected String name;
     protected double length;
@@ -12,13 +11,11 @@ class Ship {
         this.capacity = capacity;
     }
 
-    // Метод для виведення інформації про корабель
     public void Show() {
         System.out.println("Ship Name: " + name + ", Length: " + length + "m, Capacity: " + capacity + " passengers");
     }
 }
 
-// Підклас Пароплав
 class Steamboat extends Ship {
     private double steamPower;
 
@@ -34,7 +31,6 @@ class Steamboat extends Ship {
     }
 }
 
-// Підклас Вітрильник
 class Sailboat extends Ship {
     private int sailArea;
 
@@ -50,7 +46,6 @@ class Sailboat extends Ship {
     }
 }
 
-// Підклас Корвет
 class Corvette extends Ship {
     private int guns;
 
